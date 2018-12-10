@@ -1,3 +1,6 @@
-import time, datetime
-d =
-print(time.ctime(1462482700))
+a = 10000
+b = 20000
+a = a ^ b
+b = a ^ b
+a = a ^ b
+print(a, b)
