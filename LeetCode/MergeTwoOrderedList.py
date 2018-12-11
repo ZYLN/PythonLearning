@@ -7,7 +7,18 @@ class Solution:
         :type n: int
         :rtype: void Do not return anything, modify nums1 in-place instead.
         """
-        for i in:
-            for i2, v2 in
+        a = m
+        b = n
+        i = 0
+        while b != 0:
+            if a != 0 and nums1[a - 1] > nums2[b - 1]:
+                nums1[m + n - i - 1] = nums1[a - 1]
+                a -= 1
+            else:
+                nums1[m + n - i - 1] = nums2[b - 1]
+                b -= 1
+            i += 1
+        return nums1
+
 s = Solution()
-print(s.merge([1,2,3,0,0,0], 3, [2,5,6], 3))
+print(s.merge([2,0], 1, [1], 1))
