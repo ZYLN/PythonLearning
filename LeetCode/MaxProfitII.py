@@ -9,4 +9,4 @@ class Solution:
             profit += prices[i + 1] - prices[i] if prices[i + 1] > prices[i] else 0
         return profit
 s = Solution()
-print(s.maxProfit([4,1,5,3]))
+print(s.maxProfit([4,1,5,3,2]))
